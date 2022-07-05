@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jun 30 13:35:23 2022
+| Date         : Tue Jul  5 12:42:16 2022
 | Host         : sebaspc running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_synth.rpt
 | Design       : nexys4ddr
@@ -21,17 +21,17 @@ Table of Contents
 +----------------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
 |       Instance       |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
 +----------------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
-| nexys4ddr            |             (top) |      28385 |      11881 |   16504 |    0 | 3298 |     14 |      0 |          1 |
-|   (nexys4ddr)        |             (top) |        714 |        682 |      32 |    0 | 1510 |     14 |      0 |          0 |
-|   camara             |            camara |      25163 |       8779 |   16384 |    0 |  596 |      0 |      0 |          1 |
+| nexys4ddr            |             (top) |      28565 |      12061 |   16504 |    0 | 3360 |     14 |      0 |          1 |
+|   (nexys4ddr)        |             (top) |        714 |        682 |      32 |    0 | 1543 |     14 |      0 |          0 |
+|   camara             |            camara |      25191 |       8807 |   16384 |    0 |  622 |      0 |      0 |          1 |
 |     (camara)         |            camara |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          1 |
 |     DP_RAM           |     buffer_ram_dp |      19684 |       3300 |   16384 |    0 |   12 |      0 |      0 |          0 |
 |     VGA_640x480      |        VGA_Driver |         79 |         79 |       0 |    0 |   20 |      0 |      0 |          0 |
-|     cam_read         |          cam_read |       5257 |       5257 |       0 |    0 |  416 |      0 |      0 |          0 |
+|     cam_read         |          cam_read |       5285 |       5285 |       0 |    0 |  442 |      0 |      0 |          0 |
 |     clk25_24         |   clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
 |     my_procesamiento |     procesamiento |        143 |        143 |       0 |    0 |  148 |      0 |      0 |          0 |
-|   picorv32           |          picorv32 |       2462 |       2374 |      88 |    0 | 1130 |      0 |      0 |          0 |
-|     (picorv32)       |          picorv32 |       1773 |       1685 |      88 |    0 |  675 |      0 |      0 |          0 |
+|   picorv32           |          picorv32 |       2614 |       2526 |      88 |    0 | 1133 |      0 |      0 |          0 |
+|     (picorv32)       |          picorv32 |       1925 |       1837 |      88 |    0 |  678 |      0 |      0 |          0 |
 |     pcpi_div         | picorv32_pcpi_div |        445 |        445 |       0 |    0 |  200 |      0 |      0 |          0 |
 |     pcpi_mul         | picorv32_pcpi_mul |        244 |        244 |       0 |    0 |  255 |      0 |      0 |          0 |
 |   pwm_1              |               pwm |         46 |         46 |       0 |    0 |   62 |      0 |      0 |          0 |

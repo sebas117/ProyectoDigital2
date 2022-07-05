@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jun 30 13:37:43 2022
+| Date         : Tue Jul  5 12:44:47 2022
 | Host         : sebaspc running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_drc -file nexys4ddr_drc.rpt
 | Design       : nexys4ddr

@@ -8,4 +8,4 @@ Start Address      0x00000000
 End Address        0x00FFFFFF
 
 Addr1         Addr2         Date                    File(s)
-0x00000000    0x003A607B    Jun 30 13:38:18 2022    nexys4ddr.bit
+0x00000000    0x003A607B    Jul  5 12:45:17 2022    nexys4ddr.bit

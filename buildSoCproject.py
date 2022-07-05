@@ -148,8 +148,8 @@ class BaseSoC(SoCCore):
 		
 #Boot
 
-		#self.add_rom("bootrom", 0x40000000, 2**10, contents = get_mem_data("firmware.bin", endianness="little"))# "little" for the default RISCV architectures selected by litex
-		#self.add_constant("ROM_BOOT_ADDRESS", 0x40000000)
+		self.add_rom("bootrom", 0x20000000, 2**10, contents = get_mem_data("firmware/firmware.bin", endianness="little"))# "little" for the default RISCV architectures selected by litex
+		self.add_constant("ROM_BOOT_ADDRESS", 0x20000000)
 			
 
 
