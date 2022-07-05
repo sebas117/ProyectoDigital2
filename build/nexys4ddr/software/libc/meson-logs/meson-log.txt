@@ -1,0 +1,978 @@
+Build started at 2022-06-18T00:49:27.087943
+Main binary: /usr/bin/python3
+Build Options: -Dmultilib=false -Dpicocrt=false -Datomic-ungetc=false -Dthread-local-storage=false -Dio-long-long=true -Dformat-default=integer -Dincludedir=picolibc/riscv64-unknown-elf/include -Dlibdir=picolibc/riscv64-unknown-elf/lib '--cross-file cross.txt'
+Python system: Linux
+The Meson build system
+Version: 0.62.1
+Source dir: /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data
+Build dir: /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc
+Build type: cross build
+Project name: picolibc
+Project version: 1.7.7
+Sanity testing C compiler: riscv64-unknown-elf-gcc
+Is cross compiler: True.
+Sanity check compiler command line: riscv64-unknown-elf-gcc sanitycheckc.c -o sanitycheckc_cross.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -c
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+C compiler for the host machine: riscv64-unknown-elf-gcc (gcc 8.3.0 "riscv64-unknown-elf-gcc (SiFive GCC 8.3.0-2019.08.0) 8.3.0")
+C linker for the host machine: riscv64-unknown-elf-gcc ld.bfd 2.32.0-2019
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C linker for the build machine: cc ld.bfd 2.34
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: riscv
+Host machine cpu: picorv32
+Target machine cpu family: riscv
+Target machine cpu: picorv32
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8sqkziw8
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8sqkziw8/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8sqkziw8/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -nostdlib 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -nostdlib: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmps8x9z17a
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmps8x9z17a/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmps8x9z17a/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+#include <float.h>
+#ifndef __LDBL_MANT_DIG__
+#error No long double support in float.h
+#endif
+long double test()
+{
+	long double ld = 0.0L;
+	 return ld;
+}
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "long double check" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp1cvt865f
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp1cvt865f/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp1cvt865f/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+#include <float.h>
+char size_test[sizeof(double) == sizeof(long double) ? 1 : -1];
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp1cvt865f/testfile.c:3:6: error: size of array 'size_test' is negative
+ char size_test[sizeof(double) == sizeof(long double) ? 1 : -1];
+      ^~~~~~~~~
+
+Checking if "long double same as double" compiles: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmppbo7cj3y
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmppbo7cj3y/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmppbo7cj3y/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+#include <float.h>
+char size_test[__LDBL_MANT_DIG__ == 64 ? 1 : -1];
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmppbo7cj3y/testfile.c:3:6: error: size of array 'size_test' is negative
+ char size_test[__LDBL_MANT_DIG__ == 64 ? 1 : -1];
+      ^~~~~~~~~
+
+Checking if "long double mantissa is 64 bits" compiles: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_o28nirp
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_o28nirp/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_o28nirp/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+#include <float.h>
+char size_test[__LDBL_MANT_DIG__ == 113 ? 1 : -1];
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "long double mantissa is 113 bits" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpo3n4lb56
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpo3n4lb56/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpo3n4lb56/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-common 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-common: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu41kzvg3
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu41kzvg3/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu41kzvg3/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -frounding-math 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -frounding-math: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj139fqr_
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj139fqr_/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj139fqr_/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fsignaling-nans 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fsignaling-nans: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpov_yahuy
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpov_yahuy/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpov_yahuy/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunsupported-floating-point-opt -Wno-unsupported-floating-point-opt 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ riscv64-unknown-elf-gcc: error: unrecognized command line option '-Wunsupported-floating-point-opt'; did you mean '-Wunsuffixed-float-constants'?
+
+Compiler for C supports arguments -Wno-unsupported-floating-point-opt: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpih3yn_be
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpih3yn_be/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpih3yn_be/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-stack-protector 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-stack-protector: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_3ycxcyp
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_3ycxcyp/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_3ycxcyp/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -O0 
+
+Code:
+ #ifdef __cplusplus
+        extern "C" {
+        #endif
+        void meson_uscore_prefix (void) {}
+        #ifdef __cplusplus
+        }
+        #endif
+        
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Symbols have underscore prefix: NO
+Program riscv64-unknown-elf-gcc-nm found: YES
+Program scripts/duplicate-names found: YES (/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/scripts/duplicate-names)
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8we1ga2a
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8we1ga2a/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8we1ga2a/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--defsym=_start=0 -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--defsym=_start=0: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpittg46v0
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpittg46v0/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpittg46v0/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-alias,main,testalias -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: unrecognized -a option `lias'
+collect2: error: ld returned 1 exit status
+
+Compiler for C supports link arguments -Wl,-alias,main,testalias: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdk2g4_3k
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdk2g4_3k/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdk2g4_3k/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ 
+        int foo(void) { return 0; }
+        int bar(void) __attribute__((alias("foo")));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute alias: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp9dt9rxua
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp9dt9rxua/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp9dt9rxua/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(const char * p, ...) __attribute__((format(printf, 1, 2)));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute format: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpbo1q677q
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpbo1q677q/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpbo1q677q/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ int foo(void) __attribute__((weak));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute weak: YES 
+Running command: /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc -print-search-dirs
+--- stdout ---
+install: /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/
+programs: =/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/
+libraries: =/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/riscv64-unknown-elf/8.3.0/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/riscv64-unknown-elf/8.3.0/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/lib/riscv64-unknown-elf/8.3.0/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/lib/rv64imafdc/lp64d/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/lib/riscv64-unknown-elf/8.3.0/:/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/lib/
+
+--- stderr ---
+
+
+Running command: /usr/bin/expr install: /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/ : install: *\(.*\)
+--- stdout ---
+/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/
+
+--- stderr ---
+
+
+Configuring picolibc.specs using configuration
+Configuring picolibcpp.specs using configuration
+Configuring test.specs using configuration
+Configuring picolibc.ld using configuration
+Configuring picolibcpp.ld using configuration
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpomj3bno5
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpomj3bno5/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpomj3bno5/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5pdjvtxo
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5pdjvtxo/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5pdjvtxo/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5vfm6fv
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5vfm6fv/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5vfm6fv/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Warray-bounds 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Warray-bounds: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8e408_04
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8e408_04/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp8e408_04/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2ys9cz77
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2ys9cz77/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2ys9cz77/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-braces -Wno-missing-braces 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-braces: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpoleb1uj7
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpoleb1uj7/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpoleb1uj7/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-int -Wno-implicit-int 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-int: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuiass07_
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuiass07_/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuiass07_/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wreturn-type -Wno-return-type 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-return-type: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp686nd9hi
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp686nd9hi/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp686nd9hi/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunused-command-line-argument -Wno-unused-command-line-argument 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ riscv64-unknown-elf-gcc: error: unrecognized command line option '-Wunused-command-line-argument'; did you mean '-Wunused-dummy-argument'?
+
+Compiler for C supports arguments -Wno-unused-command-line-argument: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb_60r8l3
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb_60r8l3/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb_60r8l3/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+struct test { int part: 24; } __attribute__((packed));
+unsigned int foobar (const struct test *p) { return p->part; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "packed structs may contain bitfields" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuzux2rf0
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuzux2rf0/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpuzux2rf0/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+#include <stddef.h>
+int overflows (size_t a, size_t b) { size_t x; return __builtin_mul_overflow(a, b, &x); }
+volatile size_t aa = 42;
+int main (void) { return overflows(aa, aa); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010074
+
+Checking if "has __builtin_mul_overflow" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpp2pu_n19
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpp2pu_n19/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpp2pu_n19/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib 
+
+Code:
+ 
+float _Complex test(float _Complex z) { return z; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "supports _Complex" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_oa3utkg
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_oa3utkg/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_oa3utkg/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+volatile int a = 42;
+int main (void) {
+  return __builtin_expect(a, 1);
+}
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010074
+
+Checking if "has __builtin_expect" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp7jwiep7b
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp7jwiep7b/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp7jwiep7b/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4iin2_dr
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4iin2_dr/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4iin2_dr/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror 
+
+Code:
+ 
+void *foobar(int) __attribute__((__alloc_size__(1)));
+void *foobar2(int, int) __attribute__((__alloc_size__(1, 2)));
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "attribute __alloc_size__" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp95tzk4p6
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp95tzk4p6/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp95tzk4p6/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror 
+
+Code:
+ 
+void __attribute__((constructor(101))) ctor (void) {}
+void __attribute__((destructor(101))) dtor (void) {}
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "attributes constructor/destructor" compiles: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_wux4nn5
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_wux4nn5/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp_wux4nn5/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(void * i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_alloca(1)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_alloca" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmplotykldb
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmplotykldb/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmplotykldb/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ffs(42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ffs" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnlvszut7
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnlvszut7/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnlvszut7/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(long i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ffsl((long)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ffsl" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4wmgtf_2
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4wmgtf_2/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp4wmgtf_2/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(long long i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ffsll((long long)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ffsll" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptptqmttr
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptptqmttr/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptptqmttr/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ctz((unsigned int)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ctz" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptz_fej12
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptz_fej12/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmptz_fej12/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ctzl((unsigned long)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ctzl" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpeva3f4ch
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpeva3f4ch/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpeva3f4ch/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_ctzll((unsigned long long)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_ctzll" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdnfjpba7
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdnfjpba7/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdnfjpba7/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(long double i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_copysignl((long double)42, (long double) 42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_copysignl" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5mucraz
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5mucraz/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpq5mucraz/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(double i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_copysign(42, 42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_copysign" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpsk5t817m
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpsk5t817m/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpsk5t817m/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_isinfl((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_isinfl" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu0guqli4
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu0guqli4/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpu0guqli4/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_isinf((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_isinf" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5jmoa0mp
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5jmoa0mp/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5jmoa0mp/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_isnanl((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_isnanl" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5m_mv_xj
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5m_mv_xj/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp5m_mv_xj/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_isnan((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_isnan" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpkbv65yky
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpkbv65yky/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpkbv65yky/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_finitel((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_finitel" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3u2u2hdv
+Command line:  riscv64-unknown-elf-gcc -L/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3u2u2hdv/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3u2u2hdv/output.exe -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP 
+
+Code:
+ 
+static int foo(int i __attribute__((unused))) { return 0; }
+int main(void) { return foo(__builtin_isfinite((long double)42)); }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+
+Checking if "test for __builtin_isfinite" : links: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpxj9fv_2h
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpxj9fv_2h/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpxj9fv_2h/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-tree-loop-distribute-patterns 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-tree-loop-distribute-patterns: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2vcn0ily
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2vcn0ily/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2vcn0ily/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror 
+
+Code:
+ int __attribute__((no_builtin)) foo(int x) { return x + 1; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp2vcn0ily/testfile.c:1:1: error: 'no_builtin' attribute directive ignored [-Werror=attributes]
+ int __attribute__((no_builtin)) foo(int x) { return x + 1; }
+ ^~~
+cc1: all warnings being treated as errors
+
+Checking if "no_builtin attribute" compiles: NO 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb3th318a
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb3th318a/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpb3th318a/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ inline __attribute__((always_inline)) int foo(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute always_inline: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp37cih7lf
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp37cih7lf/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp37cih7lf/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes 
+
+Code:
+ inline __attribute__((gnu_inline)) int foo(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports function attribute gnu_inline: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj48mlfa6
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj48mlfa6/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpj48mlfa6/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-builtin: YES 
+Running command: /usr/bin/sed -e /^#/d -e /^$/d -e s/ .*$// /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/iconv/encoding.aliases
+--- stdout ---
+big5
+cp775
+cp850
+cp852
+cp855
+cp866
+euc_jp
+euc_kr
+euc_tw
+iso_8859_1
+iso_8859_10
+iso_8859_11
+iso_8859_13
+iso_8859_14
+iso_8859_15
+iso_8859_2
+iso_8859_3
+iso_8859_4
+iso_8859_5
+iso_8859_6
+iso_8859_7
+iso_8859_8
+iso_8859_9
+iso_ir_111
+koi8_r
+koi8_ru
+koi8_u
+koi8_uni
+ucs_2
+ucs_2_internal
+ucs_2be
+ucs_2le
+ucs_4
+ucs_4_internal
+ucs_4be
+ucs_4le
+us_ascii
+utf_16
+utf_16be
+utf_16le
+utf_8
+win_1250
+win_1251
+win_1252
+win_1253
+win_1254
+win_1255
+win_1256
+win_1257
+win_1258
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnz9yy8yd
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnz9yy8yd/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpnz9yy8yd/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -ffunction-sections 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -ffunction-sections: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3plsoqwk
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3plsoqwk/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3plsoqwk/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-all 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fstack-protector-all: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3rbdv64m
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3rbdv64m/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp3rbdv64m/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-strong 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdqkrwmrd
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdqkrwmrd/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmpdqkrwmrd/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-malloc 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-builtin-malloc: YES 
+Running compile:
+Working directory:  /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp06jrij5u
+Command line:  riscv64-unknown-elf-gcc -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/opt/Litex/litex/litex/soc/software/libbase -I/opt/Litex/litex/litex/soc/software/include -I/opt/Litex/litex/litex/soc/software -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include -I/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/include/../libc -I/opt/Litex/litex/litex/soc/cores/cpu/picorv32 /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp06jrij5u/testfile.c -o /home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/meson-private/tmp06jrij5u/output.obj -c -Os -mno-save-restore -march=rv32im -mabi=ilp32 -D__picorv32__ -g3 -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-free 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-builtin-free: YES 
+Message: libc/string/memcpy.c: machine overrides generic
+Message: libc/string/memmove.S: machine overrides generic
+Message: libc/string/memset.S: machine overrides generic
+Message: libc/string/strcpy.c: machine overrides generic
+Message: libc/string/strlen.c: machine overrides generic
+Message: libc/string/strcmp.S: machine overrides generic
+Message: libc/include/sys/fenv.h: machine overrides generic
+Message: libc/include/machine/math.h: machine overrides generic
+Message: libm/math/s_fabs.c: machine overrides generic
+Message: libm/math/s_sqrt.c: machine overrides generic
+Message: libm/math/sf_fabs.c: machine overrides generic
+Message: libm/math/sf_sqrt.c: machine overrides generic
+Message: libm/common/s_finite.c: machine overrides generic
+Message: libm/common/s_copysign.c: machine overrides generic
+Message: libm/common/s_isinf.c: machine overrides generic
+Message: libm/common/s_isnan.c: machine overrides generic
+Message: libm/common/s_fma.c: machine overrides generic
+Message: libm/common/s_fmax.c: machine overrides generic
+Message: libm/common/s_fmin.c: machine overrides generic
+Message: libm/common/s_fpclassify.c: machine overrides generic
+Message: libm/common/s_lrint.c: machine overrides generic
+Message: libm/common/s_llrint.c: machine overrides generic
+Message: libm/common/s_lround.c: machine overrides generic
+Message: libm/common/s_llround.c: machine overrides generic
+Message: libm/common/sf_finite.c: machine overrides generic
+Message: libm/common/sf_copysign.c: machine overrides generic
+Message: libm/common/sf_isinf.c: machine overrides generic
+Message: libm/common/sf_isnan.c: machine overrides generic
+Message: libm/common/sf_fma.c: machine overrides generic
+Message: libm/common/sf_fmax.c: machine overrides generic
+Message: libm/common/sf_fmin.c: machine overrides generic
+Message: libm/common/sf_fpclassify.c: machine overrides generic
+Message: libm/common/sf_lrint.c: machine overrides generic
+Message: libm/common/sf_llrint.c: machine overrides generic
+Message: libm/common/sf_lround.c: machine overrides generic
+Message: libm/common/sf_llround.c: machine overrides generic
+Message: libm/fenv/feclearexcept.c: machine overrides generic
+Message: libm/fenv/fegetenv.c: machine overrides generic
+Message: libm/fenv/fegetexceptflag.c: machine overrides generic
+Message: libm/fenv/fegetround.c: machine overrides generic
+Message: libm/fenv/feholdexcept.c: machine overrides generic
+Message: libm/fenv/feraiseexcept.c: machine overrides generic
+Message: libm/fenv/fesetenv.c: machine overrides generic
+Message: libm/fenv/fesetexceptflag.c: machine overrides generic
+Message: libm/fenv/fesetround.c: machine overrides generic
+Message: libm/fenv/fetestexcept.c: machine overrides generic
+Message: libm/fenv/feupdateenv.c: machine overrides generic
+Configuring picolibc.h using configuration
+Build targets in project: 9
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+ * 0.58.0: {'meson.get_cross_property'}
+
+picolibc 1.7.7
+
+  User defined options
+    Cross files         : cross.txt
+    includedir          : picolibc/riscv64-unknown-elf/include
+    libdir              : picolibc/riscv64-unknown-elf/lib
+    atomic-ungetc       : false
+    format-default      : integer
+    io-long-long        : true
+    multilib            : false
+    picocrt             : false
+    thread-local-storage: false
+
+Found ninja-1.10.0 at /usr/bin/ninja
+Failed to guess install tag for /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/picolibc.specs
+Failed to guess install tag for /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/picolibcpp.specs
+Failed to guess install tag for /usr/local/picolibc/riscv64-unknown-elf/lib/picolibc.ld
+Failed to guess install tag for /usr/local/picolibc/riscv64-unknown-elf/lib/picolibcpp.ld
+Command line for building ['newlib/libc.a'] is long, using a response file

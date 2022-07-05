@@ -1,0 +1,13 @@
+[options]
+multilib = false
+picocrt = false
+atomic-ungetc = false
+thread-local-storage = false
+io-long-long = true
+format-default = integer
+includedir = picolibc/riscv64-unknown-elf/include
+libdir = picolibc/riscv64-unknown-elf/lib
+
+[properties]
+cross_file = ['/home/sebastian/ElectronicaDigital2/LabDigital2022_1/SocProject/SoC_myProject_2022/SoC_myProject_2022/build/nexys4ddr/software/libc/cross.txt']
+
