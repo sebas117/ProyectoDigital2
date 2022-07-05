@@ -1,3 +1,3 @@
-# ProyectoDigital2
+# Proyecto Final Digital2
 
-Entrega Final
+#Autores
